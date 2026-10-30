@@ -1,0 +1,9 @@
+# Python 3.10+
+fastapi>=0.110
+uvicorn>=0.29
+pydantic>=2.6
+anthropic>=0.40        # IA generativa (opcional: sem chave roda em modo offline)
+paho-mqtt>=2.0         # ponte MQTT com o HiveMQ / ESP32
+matplotlib>=3.8        # graficos da avaliacao do modelo
+pytest>=8.0
+httpx>=0.27            # cliente de teste da API

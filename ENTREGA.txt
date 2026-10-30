@@ -1,0 +1,24 @@
+FIAP - DISRUPTIVE ARCHITECTURES: IOT, IOB & GENERATIVE IA
+Challenge CLYVO VET - Entrega da 4a Sprint
+Projeto: PetLink - IA integrada a aplicacao da CLYVO VET
+
+Integrantes
+  Felipe Furlanetto ........ RM 562766
+  Raul Rezende ............. RM 564002
+  Joao Victor Caetano ...... RM 562074
+  Ryan Victor .............. RM 565667
+  Joao Victor Castelini .... RM 564115
+
+Video pitch (YouTube, nao listado):
+  COLE_O_LINK_AQUI
+
+Repositorio no GitHub (codigo-fonte, estrutura e README com instrucoes de uso,
+tecnologias e resultados):
+  https://github.com/Buenozw/CHALLENGE---IOT
+
+Resumo
+  - Modelo preditivo de anomalias com baseline individual por pet (ia/anomaly_detector.py)
+  - IA generativa: explicacao de alertas, boletim diario e assistente conversacional (ia/assistente_ia.py)
+  - Integracao: API FastAPI + SQLite + ponte MQTT (HiveMQ) + painel web + tela do app React Native
+  - 53 testes automatizados, incluindo cenarios reais de uso
+  - Avaliacao: 94% dos episodios detectados e 0,03 falso alarme/pet/semana (docs/RESULTADOS.md)
