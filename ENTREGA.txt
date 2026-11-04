@@ -10,7 +10,7 @@ Integrantes
   Joao Victor Castelini .... RM 564115
 
 Video pitch (YouTube, nao listado):
-  COLE_O_LINK_AQUI
+  https://youtu.be/yEjliSQtKCQ
 
 Repositorio no GitHub (codigo-fonte, estrutura e README com instrucoes de uso,
 tecnologias e resultados):
