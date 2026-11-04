@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PetLink · CLYVO VET</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%2317322B'/><path d='M6 17h6l2-5 4 10 2-5h6' stroke='%23D3EADF' stroke-width='2.4' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&display=swap" rel="stylesheet">
+  <!-- Bibliotecas locais (funciona offline, sem build) -->
+  <script src="/static/vendor/tailwind-browser.js"></script>
+  <script src="/static/vendor/react.production.min.js"></script>
+  <script src="/static/vendor/react-dom.production.min.js"></script>
+  <script src="/static/vendor/babel.min.js"></script>
+  <style>
+    /* Mesmas cores do @theme, declaradas tambem em CSS puro: o Tailwind so emite as
+       variaveis usadas em classes, e os graficos SVG usam var(--color-...) direto. */
+    :root {
+      --color-papel: #F2F5F3; --color-cartao: #FFFFFF; --color-pinho: #17322B; --color-musgo: #4E6660;
+      --color-nevoa: #7E918B; --color-linha: #DCE4E0; --color-faixa: #D3EADF; --color-traco: #1F7A63;
+      --color-atividade: #7DB3D1; --color-ok: #2E8B57; --color-baixa: #C98E00; --color-media: #D9662F;
+      --color-critica: #C33636;
+    }
+  </style>
+  <style type="text/tailwindcss">
+    @theme {
+      --font-sans: "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", sans-serif;
+      --font-display: "Bricolage Grotesque", "Atkinson Hyperlegible", system-ui, sans-serif;
+      --color-papel: #F2F5F3;
+      --color-cartao: #FFFFFF;
+      --color-pinho: #17322B;
+      --color-musgo: #4E6660;
+      --color-nevoa: #7E918B;
+      --color-linha: #DCE4E0;
+      --color-faixa: #D3EADF;
+      --color-traco: #1F7A63;
+      --color-atividade: #7DB3D1;
+      --color-ok: #2E8B57;
+      --color-baixa: #C98E00;
+      --color-media: #D9662F;
+      --color-critica: #C33636;
+    }
+    body { background: var(--color-papel); color: var(--color-pinho); }
+    :focus-visible { outline: 2px solid var(--color-traco); outline-offset: 2px; border-radius: 6px; }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+    .pulso { animation: pulso 2.4s ease-in-out infinite; }
+    @keyframes pulso { 0%,100% { opacity: 1 } 50% { opacity: .35 } }
+  </style>
+</head>
+<body class="font-sans antialiased">
+  <div id="raiz"></div>
+  <noscript>Ative o JavaScript para ver o painel do PetLink.</noscript>
+  <script type="text/babel" data-presets="react" src="/static/app.jsx"></script>
+</body>
+</html>
