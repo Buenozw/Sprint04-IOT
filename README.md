@@ -10,8 +10,8 @@
 | Ryan Victor | 565667 |
 | João Victor Castelini | 564115 |
 
-🎥 **Vídeo pitch (YouTube, não listado):** _cole o link aqui_
-📦 **Repositório:** https://github.com/Buenozw/Sprint04-IOT
+🎥 **Vídeo pitch (YouTube, não listado):** https://youtu.be/yEjliSQtKCQ
+📦 **Repositório:** https://github.com/Buenozw/Sprint04-IOT.git
 
 ![Painel do tutor](docs/img/painel_tutor.png)
 
